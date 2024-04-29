@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Project</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+    <main>
+
+        <div class="result-summary">
+            <div class="summary">
+                <h2 class="section-title">
+                    Summary
+                </h2>
+
+                
+                <div class="grid-flow">
+                    <form method="POST">
+                    {{ template_form.hidden_tag() }}
+
+                    <div class="summary-item" data-item-type="accent-1">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Longitude</h3>
+                            {{ template_form.longitude() }}
+                        </div>
+                    </div>
+                    <div class="summary-item" data-item-type="accent-2">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Latitude</h3>
+                            {{ template_form.latitude() }}
+                        </div>
+                    </div>
+                    <div class="summary-item" data-item-type="accent-3">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Age</h3>
+                            {{ template_form.age() }}
+                        </div>
+                    </div>
+                    <div class="summary-item" data-item-type="accent-4">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Total Rooms</h3>
+                            {{ template_form.rooms() }}
+                        </div>
+                    </div>
+                    {#   4 -> 5   #}
+                    <div class="summary-item" data-item-type="accent-1">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Total Bedrooms</h3>
+                            {{ template_form.bedrooms() }}
+                        </div>
+                    </div>
+                    <div class="summary-item" data-item-type="accent-2">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Population</h3>
+                            {{ template_form.population() }}
+                        </div>
+                    </div>
+                    <div class="summary-item" data-item-type="accent-3">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Households</h3>
+                            {{ template_form.households() }}
+                        </div>
+                    </div>
+                    <div class="summary-item" data-item-type="accent-4">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Median Income</h3>
+                            {{ template_form.income() }}
+                        </div>
+                    </div>
+                    {#   8 -> 10, skipping 9   #}
+                    <div class="summary-item" data-item-type="accent-1">
+                        <div class="flex-group">
+                            <svg <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                            <h3 class="summary-item-title">Ocean Proximity</h3>
+                            {{ template_form.ocean() }}
+                        </div>
+                    </div>
+
+                {{ template_form.submit(class_="button") }}
+                </form>
+                {#    <button class="button">Continue</button> #}
+                </div>
+            </div>
+
+
+            <div class="results grid-flow" data-spacing="large">
+                <h1 class="section-title">Result</h1>
+
+                <p class="result-score">
+                    <span>76</span> of 100
+                </p>
+
+                <div class="grid-flow">
+                    <p class="result-rank">Great</p>
+                    <p>You scored higher than...</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    {# <h1>Todos</h1>
+    {% for todo in todos %}
+        <li>{{ todo }}</li>
+    {% endfor %}
+
+    <form method="POST">
+        {{ template_form.hidden_tag() }}
+        <p>
+            {{ template_form.todo1.label }}
+            {{ template_form.todo1() }}
+            {{ template_form.todo2.label }}
+            {{ template_form.todo2() }}
+        </p>
+        <p>
+            {{ template_form.submit }}
+        </p>
+    </form>
+    
+    <form method="POST">
+        <input name="text">
+        <input type="submit">
+    </form> #}
+</body>
+</html>
